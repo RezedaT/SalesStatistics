@@ -75,7 +75,7 @@ public class SalesServiceTest {
         SalesService service = new SalesService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expectedNum = 5;
-        long actualNum = service.getMonthsBelowMid(sales);
+        long actualNum = service.getMonthsAboveMid(sales);
 
         Assertions.assertEquals(expectedNum, actualNum);
     }
